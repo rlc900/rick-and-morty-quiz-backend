@@ -17,16 +17,18 @@ ActiveRecord::Schema.define(version: 2020_02_07_221432) do
 
   create_table "answers", force: :cascade do |t|
     t.string "answer_content"
-    t.string "question_id"
+    t.bigint "question_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["question_id"], name: "index_answers_on_question_id"
   end
 
   create_table "questions", force: :cascade do |t|
     t.string "question_content"
-    t.string "quiz_id"
+    t.bigint "quiz_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["quiz_id"], name: "index_questions_on_quiz_id"
   end
 
   create_table "quizzes", force: :cascade do |t|
@@ -36,11 +38,13 @@ ActiveRecord::Schema.define(version: 2020_02_07_221432) do
   end
 
   create_table "user_quizzes", force: :cascade do |t|
-    t.string "user_id"
-    t.string "quiz_id"
+    t.bigint "user_id"
+    t.bigint "quiz_id"
     t.string "result"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["quiz_id"], name: "index_user_quizzes_on_quiz_id"
+    t.index ["user_id"], name: "index_user_quizzes_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -50,4 +54,8 @@ ActiveRecord::Schema.define(version: 2020_02_07_221432) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "answers", "questions"
+  add_foreign_key "questions", "quizzes"
+  add_foreign_key "user_quizzes", "quizzes"
+  add_foreign_key "user_quizzes", "users"
 end
