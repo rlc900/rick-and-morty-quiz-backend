@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 
   # REGISTER
   def create
-    
+
     @user = User.create(user_params)
     if @user.valid?
       render json: @user
@@ -21,11 +21,10 @@ class UsersController < ApplicationController
 
   # LOGGING IN
   def login
+    # byebug
     @user = User.find_by(username: params[:username])
-
     if @user && @user.authenticate(params[:password])
-      wristband = encode_token({user_id: @user.id})
-      render json: {user: UserSerializer.new(@user), token: wristband}
+      render json: @user
     else
       render json: {error: "Invalid username or password"}
     end
@@ -33,8 +32,8 @@ class UsersController < ApplicationController
 
 
   def persist
-    wristband = encode_token({user_id: @user.id})
-    render json: {user: UserSerializer.new(@user), token: wristband}
+    # wristband = encode_token({user_id: @user.id})
+    # render json: {user: UserSerializer.new(@user), token: wristband}
   end
 
   private
