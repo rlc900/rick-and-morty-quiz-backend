@@ -1,22 +1,23 @@
 class UsersController < ApplicationController
  before_action :authorized, only: [:persist]
 
-  # def index
-  #   @users = User.all
-  #
-  #   render json: @users
-  # end
+  def index
+    @users = User.all
+
+    render json: @users
+  end
 
   # REGISTER
   def create
+    
     @user = User.create(user_params)
     if @user.valid?
-      wristband = encode_token({user_id: @user.id})
-      render json: {user: UserSerializer.new(@user), token: wristband}
+      render json: @user
     else
-      render json: {error: "Invalid username or password"}
+      render json: {error: 'Invaid username or password'}
     end
   end
+
 
   # LOGGING IN
   def login

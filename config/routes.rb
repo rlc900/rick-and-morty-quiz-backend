@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   resources :questions
   resources :user_quizzes
   resources :quizzes
-  resources :users, only: [:create]
+  resources :users
+  # resources :users, only: [:create]
 
 
   # CUSTOM ROUTES
