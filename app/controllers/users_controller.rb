@@ -11,9 +11,10 @@ class UsersController < ApplicationController
   def create
     @user = User.create(user_params)
     if @user.valid?
-      render json: @user
+      wristband = encode_token({user_id: @user.id})
+      render json: {user: UserSerializer.new(@user), token: wristband}
     else
-      render json: {error: 'Invaid username or password'}
+      render json: {error: 'Invalid username or password'}
     end
   end
 
