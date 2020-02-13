@@ -37,6 +37,22 @@ class UsersController < ApplicationController
     render json: {user: UserSerializer.new(@user), token: wristband}
   end
 
+
+  def update
+    # byebug
+    @user = User.find(params[:id])
+    @user.update(username: params[:username])
+    wristband = encode_token({user_id: @user.id})
+    render json: {user: UserSerializer.new(@user), token: wristband}
+  end
+
+  def destroy
+    
+    @user = User.find(params[:id])
+    @user.destroy
+    render json: {message: 'Success!'}
+  end
+
   private
 
   def user_params
