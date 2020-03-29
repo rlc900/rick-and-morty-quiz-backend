@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-rianna = User.create(username: 'rlc900', password: '123')
+# rianna = User.create(username: 'rlc900', password: '123')
 # riannas_quiz = UserQuiz.create(user_id: rianna, quiz_id: quiz1)
 
 quiz1 = Quiz.create(title: 'Which Rick and Morty Character Are You?')
@@ -46,7 +46,7 @@ question6_quiz1 = Question.create(quiz_id: quiz1.id, question_content: 'Which so
   answer1_question6 = Answer.create(question_id: question6_quiz1.id, answer_content: 'Riding attractions in Anatomy Park, an amusement park Rick built inside of a homeless man.')
   answer1_question6 = Answer.create(question_id: question6_quiz1.id, answer_content: 'Traveling to Pizza Universe, where the roles of pizza and humans are switched.')
 
-riannas_quiz = UserQuiz.create(user_id: rianna.id, quiz_id: quiz1.id)
+# riannas_quiz = UserQuiz.create(user_id: rianna.id, quiz_id: quiz1.id)
 
 
 
