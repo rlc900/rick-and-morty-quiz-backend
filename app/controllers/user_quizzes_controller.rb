@@ -12,8 +12,10 @@ def create
   @user = logged_in_user
   @quiz = Quiz.all.first
   # byebug
-  @result = UserQuiz.create(user_id: @user.id, quiz_id: @quiz.id, result: params[:result])
+  @result = UserQuiz.create(user_id: @user.id, quiz_id: @quiz.id, result: params[:name])
   # byebug
   render json: @result
 end
+
+
 end
