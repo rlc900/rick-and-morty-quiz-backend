@@ -31,7 +31,7 @@ To launch this application, you'll have to follow these steps:
 
 **Backend Installation**
 - Clone [this repo](https://github.com/rlc900/rick-and-morty-quiz-backend.git) in your computers terminal.
-- After cloning, `cd` into that directiory `cd galaxy_bnb_api/`.
+- After cloning, `cd` into that directiory `cd rick-and-morty-quiz-backend/`.
 - Run `bundle install` to install the required dependencies.
 - Make sure PostgreSQL is running on your machine.
 - Run `rails db:create` to create a database locally.
@@ -41,6 +41,7 @@ To launch this application, you'll have to follow these steps:
 
 **Frontend Installation**
 - Clone [this repo](https://github.com/rlc900/rick-and-morty-quiz-frontend.git) in your computers terminal.
+- After cloning, `cd` into that directiory `cd rick-and-morty-frontend/`.
 - Make sure your Backend API is running at http://localhost:4000/.
 - Run `npm install` to install all dependencies.
 - Run `npm start` to start server.
