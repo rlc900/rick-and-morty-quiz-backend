@@ -72,27 +72,10 @@ After the quiz is finished, a character card with the characters name, picture &
      style="max-width: 100%" />
 </p>
 
-After the user decides the destination they'd like to travel to, a confirmation window pops up to confirm all of their
-information is correct, followed by an already existing card payment method.
+Users are also able to update their username and delete their account!
 
 <p align="center">
 <img src="gif4.gif"
-     alt="sign in option taken to home page"
-     style="max-width: 100%" />
-</p>
-
-User is then taken to their profile page, with their booked location & including their information.
-
-<p align="center">
-<img src="gif5.gif"
-     alt="sign in option taken to home page"
-     style="max-width: 100%" />
-</p>
-
-The user is also able to update their username and delete their account!
-
-<p align="center">
-<img src="gif6.gif"
-     alt="sign in option taken to home page"
+     alt="users can update and delete their account"
      style="max-width: 100%" />
 </p>
