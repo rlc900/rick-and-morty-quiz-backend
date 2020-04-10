@@ -56,7 +56,7 @@ Users are able to signup/login into their account.
      style="max-width: 100%" />
 </p>
 
-The user is redirected to their profile page, and can take the quiz by clicking on 'Take Quiz' on the left!
+The user is redirected to their profile page, and can take the quiz by clicking on 'Take Quiz' on the the navbar to the left!
 
 <p align="center">
 <img src="gif2.gif"
