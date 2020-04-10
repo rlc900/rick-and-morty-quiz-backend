@@ -1,6 +1,6 @@
 <h1 align="center">Let's Get Schwifty🧪</h1>
 
-A `React` application that allows users to take a 'Which character are you?' quiz based off the T.V. show Rick and Morty!
+A `React` application that allows users to take a 'Which character are you?' quiz based on the T.V. show Rick and Morty!
 
 ## Technologies
 This web app makes use of the following technologies:
