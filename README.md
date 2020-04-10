@@ -64,12 +64,11 @@ The user is redirected to their profile page, and can take the quiz by clicking 
      style="max-width: 100%" />
 </p>
 
-Upon submitting, the user is propmpted to the designated planets page, which displays all of the locations to go to for that
-planet!
+After the quiz is finished, a character card with the characters name, picture & description appears with the character that is most like the user! They're also able to add they're result to their profile page. 
 
 <p align="center">
 <img src="gif3.gif"
-     alt="sign in option taken to home page"
+     alt="a result card is rendered with a button that adds to the users profile page"
      style="max-width: 100%" />
 </p>
 
