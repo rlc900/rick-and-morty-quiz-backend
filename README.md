@@ -46,3 +46,54 @@ To launch this application, you'll have to follow these steps:
 - Run `npm install` to install all dependencies.
 - Run `npm start` to start server.
 - Once you're taken to the web app, ensure Frontend is running at http://localhost:3001.
+
+## Features
+Users are able to signup/login into their account.
+
+<p align="center">
+<img src="gif1.gif"
+     alt="sign in option taken to home page"
+     style="max-width: 100%" />
+</p>
+
+The user then fills out a form on the homepage, where they'll be able to input & submit they're travel info!
+
+<p align="center">
+<img src="gif2.gif"
+     alt="sign in option taken to home page"
+     style="max-width: 100%" />
+</p>
+
+Upon submitting, the user is propmpted to the designated planets page, which displays all of the locations to go to for that
+planet!
+
+<p align="center">
+<img src="gif3.gif"
+     alt="sign in option taken to home page"
+     style="max-width: 100%" />
+</p>
+
+After the user decides the destination they'd like to travel to, a confirmation window pops up to confirm all of their
+information is correct, followed by an already existing card payment method.
+
+<p align="center">
+<img src="gif4.gif"
+     alt="sign in option taken to home page"
+     style="max-width: 100%" />
+</p>
+
+User is then taken to their profile page, with their booked location & including their information.
+
+<p align="center">
+<img src="gif5.gif"
+     alt="sign in option taken to home page"
+     style="max-width: 100%" />
+</p>
+
+The user is also able to update their username and delete their account!
+
+<p align="center">
+<img src="gif6.gif"
+     alt="sign in option taken to home page"
+     style="max-width: 100%" />
+</p>
