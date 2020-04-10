@@ -52,15 +52,15 @@ Users are able to signup/login into their account.
 
 <p align="center">
 <img src="gif1.gif"
-     alt="sign in option taken to home page"
+     alt="sign up or login takes you to the profile page"
      style="max-width: 100%" />
 </p>
 
-The user then fills out a form on the homepage, where they'll be able to input & submit they're travel info!
+The user is redirected to their profile page, and can take the quiz by clicking on 'Take Quiz' on the left!
 
 <p align="center">
 <img src="gif2.gif"
-     alt="sign in option taken to home page"
+     alt="user clicks on take quiz tab to take a quiz"
      style="max-width: 100%" />
 </p>
 
